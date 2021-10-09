@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- FONT AWeSOME -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="css/style.css" />
+
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="player__container">
+        <button class="btn rock">
+          <i class="fas fa-hand-rock icon"></i>
+          <div class="rock__cover cover">&nbsp;</div>
+        </button>
+        <button class="btn paper">
+          <i class="fas fa-hand-paper"></i>
+          <div class="paper__cover cover">&nbsp;</div>
+        </button>
+        <button class="btn scissor">
+          <i class="fas fa-hand-scissors"></i>
+          <div class="scissor__cover cover">&nbsp;</div>
+        </button>
+      </div>
+      <div class="cpu__container">
+        <button class="btn rock--hidden">
+          <i class="fas fa-hand-rock icon"></i>
+        </button>
+        <button class="btn paper--hidden">
+          <i class="fas fa-hand-paper"></i>
+        </button>
+        <button class="btn scissor--hidden">
+          <i class="fas fa-hand-scissors"></i>
+        </button>
+      </div>
+    </div>
+    <div class="choices">
+      <div class="player">
+        <div class="choice player__choice">
+          <p>Player picks:</p>
+        </div>
+
+        <div class="player__answer">
+          <p class="player__answer--hidden">&nbsp;</p>
+        </div>
+
+        <button class="submit">Submit</button>
+      </div>
+
+      <div class="cpu">
+        <div class="choice cpu__choice">
+          <p>CPU picks:</p>
+        </div>
+
+        <div class="cpu__answer">
+          <p class="cpu__answer--hidden">&nbsp;</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="winner__container">
+      <div class="box">
+        <p>and the winner is...</p>
+      </div>
+      <div class="box">
+        <p class="winner">&nbsp;</p>
+      </div>
+      <button class="again">Play Again</button>
+    </div>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
